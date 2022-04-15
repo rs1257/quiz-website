@@ -1,0 +1,126 @@
+/* Variables */
+:root {
+  --primary-colour: #0075ff;
+  --secondary-colour: #ff005d;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.text {
+  font-size: 2rem;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+h1,
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 10rem;
+  margin: 0;
+  animation: expand 3s;
+}
+
+@keyframes expand {
+  from {
+    font-size: 5rem;
+  }
+}
+
+.title {
+  animation: pulse 2s alternate infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: var(--primary-colour);
+  }
+  100% {
+    background-color: var(--secondary-colour);
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  border: white solid 5px;
+  border-radius: 50px;
+  padding: 0.1rem 1rem;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.number {
+  background: red;
+  border: white solid 5px;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+}
+
+.question h2 {
+  margin-left: 1rem;
+}
+
+.btns {
+  display: flex;
+}
+
+.btn {
+  text-decoration: none;
+  background: white;
+  height: 2.2rem;
+  width: 10rem;
+  margin: 1rem 0.5rem 1rem 0.5rem;
+  border-radius: 20px;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #088da5;
+  font-weight: bolder;
+}
+
+.btn:hover {
+  background: #333333;
+  transition: all 1s;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.body img {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+}
